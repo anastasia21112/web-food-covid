@@ -1,18 +1,22 @@
 ## GITHUB FROM THE COMMANDLINE  
 
-* cd into your local directory:   
-  ` cd web-food-covid`    
+* cd into your local directory:    
+  ` cd web-food-covid`      
 * pull from github:
-  ` git pull `  
+  ` git pull `   
 * add your changes:
 ` git add . `
-* commit your changes:   
+* commit your changes:     
 ` git commit -m "change"`
-* push your changes:  
-` git push -u origin master`  
+* push your changes:    
+` git push -u origin master`     
 
 ## ATOM TELETYPE   
 * Go to `Packages > Settings View > Install Packages/Themes > Atom Teletype`  
 * Click on the little cell tower  
 * Follow instructions to get a token  
 * Share and Join portals from the cell tower  
+
+## RUNNING CODE FROM TERMINAL
+* cd into the folder with the file in it
+* run the code with python 'filename'.py
