@@ -2,7 +2,7 @@
 This is for the Helix Hacks Hackathon
 
 ### Members
-* Angela Layton  
+* Angela Layton: I go to West
 * Daphne Liu  
 * Anastasia Dunca
 * Fikir Teklemedhin
