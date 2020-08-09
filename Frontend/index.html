@@ -14,6 +14,22 @@
 
 <body>
 
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  var result = {riskLevel:'MEDIUM'}; //TODO get from response
+
+  function onSubmit() {
+    // alert("clicked insdie submit");
+    $("#riskLevel").html(result?result.riskLevel:'Not Available');
+  }
+
+  </script>
+
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Find what foods can best help you resist COVID-19</h1>
@@ -165,12 +181,12 @@
                   </div>
 
                 </div>
-
+                <button class="btn btn-primary" type="button" onclick="onSubmit()">Submit </button>
               </div>
             </form>
 
           </p>
-          <a href="#" class="btn btn-primary">Submit</a>
+
         </div>
       </div>
 
@@ -180,7 +196,7 @@
         <img src="./Graphs/Covid_Img.jpg" class="align-self-center w-25" alt="...">
         <div class="media-body">
           <h1 class="mt-0">Risk Status for COVID-19</h1>
-          <h2 class="mb-0">**Place number here</h2>
+          <h2 class="mb-0" id="riskLevel">**Results Will Show Here**</h2>
           <h3 class="mb-0">**Small description</h3>
         </div>
       </div>
@@ -248,33 +264,27 @@
           <div class="col 1">
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <h5 class="card-title">Nutrition</h5>
+                <p class="card-text">Nutrition amid the COVID-19 pandemic: a multi-level framework for action</p>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7167535/" class="stretched-link">View Article</a>
               </div>
             </div>
           </div>
           <div class="col 2">
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <h5 class="card-title">Diet</h5>
+                <p class="card-text">Diet Can Fight Diseases Linked to Poor COVID-19 Outcomes</p>
+                <a href="https://www.pcrm.org/news/blog/diet-can-fight-diseases-linked-poor-covid-19-outcomes" class="card-link">View Article</a>
               </div>
             </div>
           </div>
           <div class="col 3">
             <div class="card" style="width: 18rem;">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
+                <h5 class="card-title">COVID-19 Susceptibility</h5>
+                <p class="card-text">The impact of nutrition on COVID-19 susceptibility and long-term consequences</p>
+                <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7165103/" class="card-link">Card link</a>
               </div>
             </div>
           </div>
@@ -288,11 +298,7 @@
       </div>
 
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 
 
     </body>
