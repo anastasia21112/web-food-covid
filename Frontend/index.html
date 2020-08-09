@@ -21,18 +21,35 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
   <script type="text/javascript">
-  var result = {riskLevel:'MEDIUM'}; //TODO get from response
 
   function onSubmit() {
-    var selectedFoodGroups = {};
+
+    var selectedFoodGroups =[];
     $.each($("input[name='foodGroup']:checked"), function(){
-      let food = $(this).val();
-      let value =  $(`#${$(this).val()}Slider`).val();
-      selectedFoodGroups[food]=value;
+      let id = $(this).val();
+      let score =  $(`#${$(this).val()}Slider`).val();
+      selectedFoodGroups.push({id,score});
     });
     alert("selected: " + JSON.stringify(selectedFoodGroups));
 
+    // HTTP GET
+    //  $.get( "http://localhost:3000/static/risk-level.json", selectedFoodGroups )
+    //  .done(function( result ) {
+    //  // alert( "Data Loaded: " + JSON.stringify(data));
+    //    $("#riskLevel").html(result?result.riskLevel:'Not Available');
+    // });
+
+    // HTTP POST
+    //  $.post( "http://localhost:3000/static/risk-level.json", selectedFoodGroups )
+    //  .done(function( result ) {
+    //  // alert( "Data Loaded: " + JSON.stringify(data));
+    //    $("#riskLevel").html(result?result.riskLevel:'Not Available');
+    // });
+
+    //HARD code
+    var result ={riskLevel:'HIGH'};
     $("#riskLevel").html(result?result.riskLevel:'Not Available');
+
   }
 
   </script>
