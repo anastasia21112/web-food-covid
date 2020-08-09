@@ -2,7 +2,12 @@
 This is for the Helix Hacks Hackathon
 
 ### Members
-* Angela Layton: I go to West
+* Angela Layton
 * Daphne Liu  
 * Anastasia Dunca
 * Fikir Teklemedhin
+
+### Access the website  
+* Go to ` Front End > Index.HTML`
+* Download the file
+* Open in Chrome
