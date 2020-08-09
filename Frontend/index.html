@@ -27,7 +27,7 @@
     var selectedFoodGroups = {};
     $.each($("input[name='foodGroup']:checked"), function(){
       let food = $(this).val();
-      let value =  $(#${$(this).val()}Slider).val();
+      let value =  $(`#${$(this).val()}Slider`).val();
       selectedFoodGroups[food]=value;
     });
     alert("selected: " + JSON.stringify(selectedFoodGroups));
@@ -50,8 +50,8 @@
     <h4> Instructions: </h4>
     <h6> Click the checkboxes next to the items that are included in your diet.
       Then use the sliding scale next to the marked checkboxes to indicate the
-      percentage of your diet that food makes up. Place the sliding scales of the
-      foods that you do not eat at 0, but do not mark the checkboxes next to these foods.
+      percentage of your diet that food makes up. Of the foods that you do not eat leave the
+      checkboxes blank and it is not necessary to move the slider.
       Then press submit once you have completed the quiz.</h6>
 
       <div class="card">
